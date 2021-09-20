@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style2.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="icon" href="images/logo.jpg" />
+
+    <title>7PACKERS & MOVERS</title>
+
+</head>
+
+<body>
+
+    <section id="banner">
+        <img src="images/logo.jpg" class="logo">
+
+        <div id="sideNav">
+            <nav>
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="service.html">SERVICES</a></li>
+                    <li><a href="website team.html">WHY CHOOSE US</a></li>
+                    <li><a href="booking.html">BOOK NOW</a></li>
+                    <li><a href="final.html">TRACKING</a></li>
+                    <li><a href="index.html">CONTACT US</a></li>
+					<li><a href="profile.html">PROFILE</a></li>
+                    <li><a href="login.html">LOGIN</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="menuBtn">
+            <img src="images/menu.png" id="menu">
+        </div>
+    </section>
+    <br><br>
+    <center class="space">
+        <h1 id="top"> </h1>
+    </center>
+    <div id="booking_img">
+        <div class="card">
+            <form action="">
+                <center><img src="images/quote.png" alt="" id="new_one"></center>
+                <input id="name" name="name" type="text" placeholder="Enter Your Name" required />
+                <input id="number" name="number" type="number" placeholder="Enter Your Mobile Number" required />
+                <input id="From" name="From" type="text" placeholder="Moving From" required />
+                <select name="Select City" id="textfield" required>
+                    <option value="" disabled selected>Please select the city from</option>
+                    <option value="Chennai">Chennai</option>
+                    <option value="Hyderabad">Hyderabad</option>
+                    <option value="Bangalore">Bangalore</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Delhi">Delhi</option>
+                </select>
+                <input id="textfield" name="textfield" type="text" placeholder="Moving To" required />
+                <select name="Select City" id="textfield" required>
+                    <option value="" disabled selected>Please select the city to</option>
+                    <option value="Chennai">Chennai</option>
+                    <option value="Hyderabad">Hyderabad</option>
+                    <option value="Bangalore">Bangalore</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Delhi">Delhi</option>
+                </select>
+                <input id="to" name="to" type="text" placeholder="Package Weight(approximate)" />
+                <select name="Select City" id="textfield">
+                    <option value="" disabled selected>Please select Vehicle Type</option>
+                    <option value="Mini Truck">Mini Truck</option>
+                    <option value="Container">Container</option>
+                    <option value="Tata Ace">Tata Ace</option>
+                    <option value="Mahendra Bolera">Mahendra Bolera</option>
+                    <option value="20 Feet Open All Side">20 Feet Open All Side</option>
+                </select>
+                <input type="date" id="textfield" name="Textfiels" min="2021-06-09" max="2022-12-31" value="2021-06-09"
+                    required>
+                <input id="kilo" name="kilo" type="number" placeholder="Number of Kilo-Meter" />
+
+                <button><a id="Submit" href="http://online.pubhtml5.com/orut/egyb/#p=1" target="_blank"
+                        onclick="alert('Hello\nHow are you?\nPrice estimation is sent to your mobile number \nWith our agent contact details \nAnd you can also download quote in nxt page') "></a>SUBMIT
+                    NOW</button>
+            </form>
+        </div>
+
+    </div>
+    </section>
+    <section>
+        <section id="footer">
+            <div class="title-text">
+                <h1> </h1>
+
+            </div>
+            <div class="footer-row">
+                <div class="footer-left">
+                    <h1>Timing</h1>
+                    <p><i class="fas fa-clock"></i>Monday to Friday - 5am to 9pm</p>
+                    <p><i class="fas fa-clock"></i>Saturday and Sunday - 9am to 5pm</p>
+                </div>
+                <div class="footer-right">
+                    <h1>Get In Touch</h1>
+                    <p> #30, abc colony, xyz city IN<i class="fas fa-map-marker-times"></i></p>
+                    <p> 7PackersandMovers@gmail.com<i class="fas fa-envelope"></i></p>
+                    <p> +91 9876543210<i class="fas fa-phone-square"></i></p>
+                </div>
+            </div>
+
+            <div class="social-links">
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter-square"></i>
+                <i class="fab fa-youtube-square"></i>
+            </div>
+        </section>
+
+
+
+
+
+
+    </section>
+    <script>
+        var menuBtn = document.getElementById("menuBtn")
+        var sideNav = document.getElementById("sideNav")
+        var menu = document.getElementById("menu")
+        sideNav.style.right == "-250px";
+
+        menuBtn.onclick = function () {
+            if (sideNav.style.right == "-250px") {
+                sideNav.style.right = "0";
+                menu.src = "images/close.png";
+
+            }
+            else {
+                sideNav.style.right = "-250px";
+                menu.src = "images/menu.png";
+            }
+        }
+    </script>
+</body>
+
+</html>

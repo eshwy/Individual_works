@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo.jpg" />
+
+    <title>7PACKERS & MOVERS</title>
+
+    <link rel="stylesheet" href="style2.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+
+</head>
+
+<body>
+    <section class="bgc">
+
+        <section id="banner">
+            <img src="images/logo.jpg" class="logo">
+
+            <div id="sideNav">
+                <nav>
+                    <ul>
+                        <li><a href="home.html">HOME</a></li>
+                        <li><a href="service.html">SERVICES</a></li>
+                        <li><a href="website team.html">WHY CHOOSE US</a></li>
+                        <li><a href="booking.html">BOOK NOW</a></li>
+                        <li><a href="final.html">TRACKING</a></li>
+                        <li><a href="index.html">CONTACT US</a></li>
+						<li><a href="profile.html">PROFILE</a></li>
+                        <li><a href="login.html">LOGIN</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div id="menuBtn">
+                <img src="images/menu.png" id="menu">
+            </div>
+        </section>
+        <br>
+        <center class="space">
+            <h1 id="top">ADDRESS AND PACKAGE</h1>
+        </center>
+        <div id="booking_img">
+            <div class="card">
+
+                <img src="images/sample.jpg" id="size_i">
+
+            </div>
+            <div class="card">
+                <center>
+                    <form action="">
+                        <input id="name" name="name" type="text" placeholder="Enter Your Name" required />
+                        <input id="number" name="number" type="number" placeholder="Enter Your Mobile Number" required />
+                        <input id="mail" name="mail" type="text" placeholder="Enter Your E-Mail ID" required />
+                        <input id="weight" name="weight" type="number" placeholder="Package Weight(approximate)"
+                            required />
+                        <select name="Vehi_type" id="Vehi_type" required>
+                            <option value="" disabled selected required>Please select Vehicle Type</option>
+                            <option value="Mini Truck">Mini Truck</option>
+                            <option value="Container">Container</option>
+                            <option value="Tata Ace">Tata Ace</option>
+                            <option value="Mahendra Bolera">Mahendra Bolera</option>
+                            <option value="20 Feet Open All Side">20 Feet Open All Side</option>
+                        </select>
+                        <input id="From" name="from" type="text" placeholder="Moving From" required />
+                        <select name="Select City" id="textfield" required>
+                            <option value="" disabled selected>Please select the city from</option>
+                            <option value="Chennai">Chennai</option>
+                            <option value="Hyderabad">Hyderabad</option>
+                            <option value="Bangalore">Bangalore</option>
+                            <option value="Mumbai">Mumbai</option>
+                            <option value="Delhi">Delhi</option>
+                        </select>
+                        <input id="to" name="to" type="text" placeholder="Moving To" required />
+                        <select name="Select City" id="textfield" required>
+                            <option value="" disabled selected>Please select the city to</option>
+                            <option value="Chennai">Chennai</option>
+                            <option value="Hyderabad">Hyderabad</option>
+                            <option value="Bangalore">Bangalore</option>
+                            <option value="Mumbai">Mumbai</option>
+                            <option value="Delhi">Delhi</option>
+                        </select>
+                        <input type="date" id="textfield" name="Textfiels" min="2021-06-09" max="2022-12-31" value="2021-06-09"
+                        required>
+                        <label for="" id="y"> Do You Need Insurance ?
+                          <input type="radio" id="insurance" name="fav_language" value="1">Yes
+                          <input type="radio" id="insurance" name="fav_language" value="0">No
+                    </label>
+                        <button><a href="payment.html"></a>BOOK NOW</button>
+                        <button> <a href=""
+                            onclick="alert('                                         Hello\n                                   How are you?\nWe recieved your request, we will contact you by end of the day \n                            THANKS FOR CHOOSING US')">
+                            </a>Consultwith US</button>
+                    </form>
+                </center>
+            </div>
+            <div>
+                <center class="booking">
+                    <ul>
+                        <li><a href="Quote.html">Quote</a></li>
+                    </ul>
+                </center>
+                <br>
+            </div>
+    </section>
+    </div>
+    <section>
+        <section id="footer">
+            <div class="title-text">
+                <h1> </h1>
+
+            </div>
+            <div class="footer-row">
+                <div class="footer-left">
+                    <h1>Timing</h1>
+                    <p><i class="fas fa-clock"></i>Monday to Friday - 5am to 9pm</p>
+                    <p><i class="fas fa-clock"></i>Saturday and Sunday - 9am to 5pm</p>
+                </div>
+                <div class="footer-right">
+                    <h1>Get In Touch</h1>
+                    <p> #30, abc colony, xyz city IN<i class="fas fa-map-marker-times"></i></p>
+                    <p> 7PackersandMovers@gmail.com<i class="fas fa-envelope"></i></p>
+                    <p> +91 9876543210<i class="fas fa-phone-square"></i></p>
+                </div>
+            </div>
+
+            <div class="social-links">
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter-square"></i>
+                <i class="fab fa-youtube-square"></i>
+            </div>
+        </section>
+    </section>
+    <script>
+        var menuBtn = document.getElementById("menuBtn")
+        var sideNav = document.getElementById("sideNav")
+        var menu = document.getElementById("menu")
+        sideNav.style.right == "-250px";
+
+        menuBtn.onclick = function () {
+            if (sideNav.style.right == "-250px") {
+                sideNav.style.right = "0";
+                menu.src = "images/close.png";
+
+            }
+            else {
+                sideNav.style.right = "-250px";
+                menu.src = "images/menu.png";
+            }
+        }
+    </script>
+</body>
+
+</html>
